@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chilindo.weathermap.WeatherDetail">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="@dimen/abc_dialog_padding_material"
+            android:paddingLeft="@dimen/abc_dialog_padding_material"
+            android:background="@color/colorPrimary"
+            android:gravity="bottom"
+            app:layout_scrollFlags="scroll|enterAlways"
+            tools:ignore="PrivateResource,RtlSymmetry"  />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_weather_detil" />
+
+
+</android.support.design.widget.CoordinatorLayout>
